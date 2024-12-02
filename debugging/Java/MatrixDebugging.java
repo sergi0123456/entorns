@@ -18,11 +18,9 @@ public class MatrixDebugging {
             System.out.println();
         }
 
-        // Paso 2: Intentar transponer la matriz
-        // Intento de transposición de la matriz
+        // Paso 2: Intentar girar la matriz 90 grados
         int[][] transposedMatrix = new int[matrix[0].length][matrix.length];
         
-        // Error en el bucle de transposición: usamos mal los índices
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
                 transposedMatrix[i][j] = matrix[j][i]; // Error: El índice i y j están invertidos
