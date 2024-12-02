@@ -18,9 +18,11 @@ public class MatrixDebugging {
             System.out.println();
         }
 
-        // Paso 2: Intentar girar la matriz 90 grados
+       
+     // Paso 2: Intentar transponer la matriz
+	    // Intento de transposición de la matriz
         int[][] transposedMatrix = new int[matrix[0].length][matrix.length];
-        
+     // Error en el bucle de transposición: usamos mal los índices
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
                 transposedMatrix[i][j] = matrix[j][i]; // Error: El índice i y j están invertidos
@@ -36,7 +38,7 @@ public class MatrixDebugging {
             System.out.println();
         }
 
-        // Paso 3: Intentar acceder a un índice fuera de los límites
+     // Paso 3: Intentar acceder a un índice fuera de los límites, no se puede acceder a un elemento fuera de la matriz
         try {
             System.out.println("\nAccediendo al elemento en [3][0]: " + matrix[3][0]);
         } catch (ArrayIndexOutOfBoundsException e) {
