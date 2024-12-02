@@ -1,4 +1,12 @@
-function validarFormulario() {
+function validarFormulario(){
+    if(validarFormulario2()){
+        alert("Formulario correcto!");
+    }else{
+        alert("Formulario incorrecto!");
+    }
+}
+
+function validarFormulario2() {
     const nombre = document.getElementById('nombre').value;
     const email = document.getElementById('email').value;
     const mensaje = document.getElementById('mensaje');
@@ -17,5 +25,5 @@ function validarFormulario() {
 
     mensaje.innerText = "Formulario enviado correctamente.";
     mensaje.style.color = "green";
-    return true;
+    return false;
 }
