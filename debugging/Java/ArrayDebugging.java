@@ -6,7 +6,7 @@ public class ArrayDebugging {
         int[] numbers = {1, 2, 3, 4, 5};
 
         // Mostrar el array original
-        System.out.println("Array original:");
+        System.out.println("Array original:"); terrones
         for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i] + " ");
         }
